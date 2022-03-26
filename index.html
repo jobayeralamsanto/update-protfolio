@@ -194,7 +194,7 @@
                                 <div class="col-12 ">
                                     <div class="section-title animate__animated animate__fadeInDown animate__delay-1s">
                                         <P class="common-desctiption">my intro</P>
-                                        <h1 class="common-title">About <span>Me</span></h1>
+                                        <!-- <h1 class="common-title">About <span>Me</span></h1> -->
                                         <div class="animated-bar"></div>
                                     </div>
                                 </div>
@@ -205,8 +205,9 @@
                                 <div class="col-lg-5 profile-photo animate__animated animate__fadeInLeft animate__delay-2s ">
                                     <div class="row">
                                         <div class="col-12 d-block col-sm-none">
-                                            <div class="test" data-shadow="true" data-shine="true" data-shine-opacity="0.5">>
-                                                <img src="assets/images/food-truck-pos.jpg" class="img-fluid main-img-mobile rspective" alt="my picture">
+                                            <div id="element">
+                                                <!-- <div class="tilt" data-shadow="true" data-shine="true" data-shine-opacity="0.5"> -->
+                                                <img src="assets/images/food-truck-pos.jpg" class="img-fluid main-img-mobile hello" alt="my picture">
                                             </div>
                                         </div>
                                     </div>
@@ -249,7 +250,7 @@
                                     <div class="col-12">
                                         <div class="section-title animate__animated animate__fadeInUp animate__delay-3s">
                                             <P class="common-desctiption">Check out my Resume</P>
-                                            <h1 class="common-title ">my <span>Resume</span></h1>
+                                            <!-- <h1 class="common-title ">my <span>Resume</span></h1> -->
                                             <div class="animated-bar "></div>
                                         </div>
                                     </div>
@@ -1103,6 +1104,8 @@
     <script src="assets/js/custom.js"></script>
     <!-- vegas background -->
     <script src="assets/js/vegas.min.js"></script>
+    <script src="assets/js/universal-tilt.js"></script>
+    <script src="assets/js/jquery.plate.js"></script>
 
     <script>
         $('.vegas-backgroung').vegas({
@@ -1122,76 +1125,24 @@
     </script>
 
     <script>
-        $('.test').UniversalTilt({
+        $('#element').plate({
 
-            settings: {
+            // inverse animation
+            inverse: false,
 
-                // element or window
-                base: 'element',
+            // transformation perspective in pixels
+            perspective: 500,
 
-                // allow/disable element position reset after mouseout
-                reset: true,
+            // maximum rotation in degrees
+            maxRotation: 10,
 
-                // enable/disable tilt effect on mobile devices
-                mobile: true,
-
-                // add/remove shine effect on mouseover
-                shine: false,
-
-                // set shine opacity (0-1)
-                // shine - opacity: 0,
-
-                // save/reset shine effect on mouseout
-                // shine - save: false,
-
-                // max tilt value
-                max: 35,
-
-                // tilt effect perspective
-                perspective: 1000,
-
-                // element scale on mouseover
-                scale: 1.0,
-
-                // disable axis (X or Y)
-                disabled: null,
-
-                // reverse tilt effect directory
-                reverse: false,
-
-                // transition speed
-                speed: 300,
-
-                // transition easing
-                easing: 'cubic-bezier(.03,.98,.52,.99)',
-
-                // disable on selected user agents
-                // /(iPod|iPhone|iPad|<a href="https://www.jqueryscript.net/tags.php?/Android/">Android</a>)/
-                exclude: null
-
-            }
-
-        });
-        $('.test').UniversalTilt({
-
-            callbacks: {
-
-                // call function on mouse enter
-                onMouseEnter: null,
-
-                // call function on mouse move
-                onMouseMove: null,
-
-                // call function on mouse leave
-                onMouseLeave: null,
-
-                // call function on device move
-                onDeviceMove: null
-
-            }
+            // duration in milliseconds
+            animationDuration: 200
 
         });
     </script>
+
+
 
 
 </body>

@@ -464,10 +464,11 @@ ul:after {
 }
 
 .common-desctiption {
-    color: #888;
+    color: #fff;
     text-align: center;
     text-transform: capitalize;
-    margin-bottom: 8px
+    margin-bottom: 8px;
+    font-size: 23px;
 }
 
 h1.common-title {
@@ -816,7 +817,7 @@ section.active {
 
 .animated-text h3 {
     color: #ff651c;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 600;
     line-height: 50px;
     letter-spacing: 1px;
@@ -1605,7 +1606,7 @@ ul.container {
     border-radius: 0;
     font-size: 15px;
     padding: 9px 14px;
-    box-shadow: 0 0 10px rgb(0 0 0 / 85%);
+    box-shadow: 0 0 10px rgb(8 8 8 / 39%);
     border-radius: 5px
 }
 
@@ -2080,7 +2081,7 @@ div.bg {
 
 div.fg {
     background-image: repeating-linear-gradient( 5deg, var(--gold) 0%, var(--light-shadow) 13%, var(--gold) 31%);
-    color: #1e2127;
+    color: #1f2238;
     transform: scale(1);
 }
 
@@ -2091,9 +2092,4 @@ div.fg {
     top: 0;
     position: fixed;
     z-index: -1;
-}
-
-.rspective {
-    -webkit-transform: translateZ(80px);
-    transform: translateZ(80px);
 }
