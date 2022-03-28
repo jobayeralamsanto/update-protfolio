@@ -1375,6 +1375,41 @@ section.active {
     margin-bottom: 10px
 }
 
+.protfolio-title {
+    padding: 10px;
+    transition: .4s;
+    transition-delay: .4s;
+}
+
+.protfolio-title a {
+    font-size: 17px;
+    font-family: lato;
+    color: #c1c1c1;
+}
+
+.protfolio-title:hover img {
+    display: inline-block;
+    transition: .4s;
+    transition-delay: .4s;
+}
+
+.protfolio-title img {
+    color: white;
+    font-size: 15px;
+    display: none;
+    transition: .4s;
+    transition-delay: .4s;
+    height: 25px;
+    width: 25px;
+}
+
+
+/* .protfolio-title i:hover {
+    color: white;
+    font-size: 15px;
+    display: block;
+} */
+
 li {
     display: inline-block
 }
