@@ -2128,3 +2128,43 @@ div.fg {
     position: fixed;
     z-index: -1;
 }
+
+#status {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+#status.success {
+    background: linear-gradient(to right, #38ef7d, #11998e);
+    color: white;
+    font-size: 19px;
+    font-weight: 900;
+    animation: status 4s ease forwards;
+}
+
+#status.error {
+    background: linear-gradient(to right, #93291E, #ED213A);
+    color: white;
+    font-size: 19px;
+    font-weight: 900;
+    animation: status 4s ease forwards;
+}
+
+@keyframes status {
+    0% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    90% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
