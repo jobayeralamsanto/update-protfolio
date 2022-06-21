@@ -13,29 +13,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Favicon -->
     <link type="image/x-icon" rel="shortcut icon" href="assets/images/fav-icon.png" />
-    <!-- Font CSS -->
     <link type="text/css" rel="stylesheet" href="assets/fonts/font.css" />
-    <!-- Font-Awesome All CSS -->
     <link type="text/css" rel="stylesheet" href="assets/css/all.css" />
-    <!-- Bootstrap CSS -->
     <link type="text/css" rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <!-- Owlcarousel CSS -->
-    <link type="text/css" rel="stylesheet" href="assets/css/owl.carousel.min.css" />
-    <!-- Fancybox CSS -->
-    <link type="text/css" rel="stylesheet" href="assets/css/jquery.fancybox.min.css" />
-    <!-- Animate CSS -->
     <link type="text/css" rel="stylesheet" href="assets/css/animate.min.css" />
-    <!-- colors CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/colors.css" />
-    <!-- Styles CSS -->
     <link type="text/css" rel="stylesheet" href="assets/css/styles.css" />
-    <!-- vegas background css -->
+    <link type="text/css" rel="stylesheet" href="assets/css/magnific-popup.min.css" />
     <link type="text/css" rel="stylesheet" href="assets/css/vegas.min.css" />
-    <!-- Live Style Switcher - demo only -->
     <link id="style-switch" href="assets/css/colors/teal.css" media="screen" rel="stylesheet" type="text/css">
-    <!-- Responsive CSS -->
     <link type="text/css" rel="stylesheet" href="assets/css/responsive.css" />
-
     <!-- Font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
@@ -74,8 +61,8 @@
         #alertBox h1 {
             margin: 0;
             font: bold 1em Raleway, arial;
-            background-color: #EC1C24;
-            color: #FFF;
+            background-color: #e01e24;
+            color: rgb(255, 255, 255);
             border-bottom: 1px solid #f97352;
             padding: 10px 0 10px 5px;
             border-radius: 12px;
@@ -265,15 +252,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row ">
-                                <div class="col-12 ">
-                                    <div class="section-title animate__animated animate__fadeInDown animate__delay-1s">
-                                        <P class="common-desctiption">my intro</P>
-                                        <!-- <h1 class="common-title">About <span>Me</span></h1> -->
-                                        <div class="animated-bar"></div>
-                                    </div>
-                                </div>
-                            </div>
                             <!-- About Title End -->
                             <!-- About-Me -->
                             <div class="row single-section">
@@ -345,122 +323,117 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="portfolio-menu animate__animated animate__fadeInUp animate__delay-2s">
+                                        <!-- <button type="button" class="control clickbtn" data-filter="all">All</button>
+                                        <button type="button" class="control clickbtn" data-filter=".webdevelopment ">WebDevelopment</button>
+                                        <button type="button" class="control clickbtn" data-filter=".webdesign ">Web Design</button>
+                                        <button type="button" class="control clickbtn" data-filter=".graphic ">Graphic Design</button>
+                                        <button type="button" class="control clickbtn" data-filter=".uiuxdesign ">UI-UX Design</button> -->
                                         <nav class="controls ">
-                                            <button type="button" class="control clickbtn" data-filter="all">All</button>
-                                            <button type="button" class="control clickbtn" data-filter=".webdevelopment ">WebDevelopment</button>
-                                            <button type="button" class="control clickbtn" data-filter=".webdesign ">Web Design</button>
-                                            <button type="button" class="control clickbtn" data-filter=".graphic ">Graphic Design</button>
-                                            <button type="button" class="control clickbtn" data-filter=".uiuxdesign ">UI-UX Design</button>
+                                            <button type="button" class="control clickbtn" data-name="*">All</button>
+                                            <button type="button" class="control clickbtn" data-name=".webdevelopment">WebDevelopment</button>
+                                            <button type="button" class="control clickbtn" data-name=".webdesign">Web Design</button>
+                                            <button type="button" class="control clickbtn" data-name=".graphic">Graphic Design</button>
+                                            <button type="button" class="control clickbtn" data-name=".uiuxdesign">UI-UX Design</button>
                                         </nav>
                                     </div>
                                 </div>
                             </div>
                             <!-- Protfolio nav-button End  -->
-                            <!-- Portfolio Mix Content Start -->
-                            <div class="row portfolio-list animate__zoomIn animate__animated animate__delay-2s">
-                                <div class="container">
-                                    <ul class="row ps-0">
-
-                                        <li class="col-xl-3 col-lg-4 col-md-6">
-                                            <div class="service-item about-card">
-                                                <div class="bg-dark rounded">
-                                                    <img src="assets/images/food-truck-pos.jpg" class="rounded-top" alt="Image description" />
-                                                    <h4 class="protfolio-title">
-                                                        <span class="service-line d-block">management</span>
-                                                        <a href="https://www.w3schools.com/js/js_object_prototypes.asp">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a>
-                                                        <!-- <i class="fas fa-location-arrow"></i> -->
-                                                        <img src="assets/images/icons-up-right.png" alt="">
-                                                    </h4>
+                            <div class="portfolio popup-ajax-gallery">
+                                <ul class="row portfolio-filter g-4">
+                                    <li class="col-sm-6 col-lg-4 portfolio-item webdevelopment">
+                                        <div class="portfolio-box rounded">
+                                            <div class="portfolio-img rounded"> <img class="img-fluid d-block" src="./assets/images/food-truck-pos.jpg" alt="">
+                                                <div class="portfolio-overlay">
+                                                    <a class="popup-ajax stretched-link" href="project-dark-4.html"></a>
+                                                    <div class="portfolio-overlay-details">
+                                                        <h5 class="text-white fw-400">Project Title</h5>
+                                                        <span class="text-light">Category</span>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </li>
-
-                                        <!-- Mix Content-Box -->
-                                        <li class="mix webdevelopment col-xl-3 col-lg-4 col-md-6">
-                                            <a title="click to zoom-in" href="assets/images/food-truck-pos.jpg" data-size="1200x600">
-                                                <img src="assets/images/food-truck-pos.jpg" alt="Image description" />
-                                                <div class="info">
-
-                                                    <span class="post">project</span>
-                                                    <a href="assets/images/food-truck-pos.jpg" class="post">about me </a>
+                                        </div>
+                                    </li>
+                                    <li class="col-sm-6 col-lg-4 portfolio-item webdesign">
+                                        <div class="portfolio-box rounded ">
+                                            <div class="portfolio-img rounded"> <img class="img-fluid d-block" src="./assets/images/food-truck-pos.jpg" alt="">
+                                                <div class="portfolio-overlay">
+                                                    <a class="popup-ajax stretched-link" href="project-one.html"></a>
+                                                    <div class="portfolio-overlay-details">
+                                                        <h5 class="text-white fw-400">Project Title</h5>
+                                                        <span class="text-light">Category</span>
+                                                    </div>
                                                 </div>
-                                            </a>
-                                        </li>
-                                        <!-- Mix Content-Box -->
-                                        <li class="mix webdesign col-xl-3 col-lg-4 col-md-6">
-                                            <a title="click to zoom-in" href="assets/images/protfolio/item-2.jpg" data-caption="Web Design" data-size="1200x600">
-                                                <img src="assets/images/protfolio/item-2.jpg" alt="Image description" />
-                                                <div class="info">
-                                                    <h3 class="title">Web Design</h3>
-                                                    <span class="post">project</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-sm-6 col-lg-4 portfolio-item webdevelopment">
+                                        <div class="portfolio-box rounded">
+                                            <div class="portfolio-img rounded"> <img class="img-fluid d-block" src="./assets/images/food-truck-pos.jpg" alt="">
+                                                <div class="portfolio-overlay">
+                                                    <a class="popup-ajax stretched-link" href="ajax/portfolio-ajax-project-dark-3.html"></a>
+                                                    <div class="portfolio-overlay-details">
+                                                        <h5 class="text-white fw-400">Project Title</h5>
+                                                        <span class="text-light">Category</span>
+                                                    </div>
                                                 </div>
-                                            </a>
-                                        </li>
-                                        <!-- Mix Content Box -->
-                                        <li class="mix uiuxdesign col-xl-3 col-lg-4 col-md-6">
-                                            <a title="click to zoom-in" href="assets/images/protfolio/item-3.jpg" data-caption="UI-UX Design" data-size="1200x600">
-                                                <img src="assets/images/protfolio/item-3.jpg" alt="Image description" />
-                                                <div class="info">
-                                                    <h3 class="title">UI-UX Design</h3>
-                                                    <span class="post">project</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-sm-6 col-lg-4 portfolio-item webdesign">
+                                        <div class="portfolio-box rounded">
+                                            <div class="portfolio-img rounded"> <img class="img-fluid d-block" src="./Best-Restaurant-POS-Systems-On-The-Market..jpg" alt="">
+                                                <div class="portfolio-overlay">
+                                                    <a class="popup-ajax stretched-link" href="project-dark-4.html"></a>
+                                                    <div class="portfolio-overlay-details">
+                                                        <h5 class="text-white fw-400">Project Title</h5>
+                                                        <span class="text-light">Category</span>
+                                                    </div>
                                                 </div>
-                                            </a>
-                                        </li>
-                                        <!-- Mix Content Box -->
-                                        <li class="mix webdevelopment col-xl-3 col-lg-4 col-md-6">
-                                            <a title="click to zoom-in" href="assets/images/protfolio/item-4.jpg" data-caption="Web Development" data-size="1200x600">
-                                                <img src="assets/images/protfolio/item-4.jpg" alt="Image description" />
-                                                <div class="info">
-                                                    <h3 class="title">Web Develoment</h3>
-                                                    <span class="post">project</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-sm-6 col-lg-4 portfolio-item graphic">
+                                        <div class="portfolio-box rounded">
+                                            <div class="portfolio-img rounded"> <img class="img-fluid d-block" src="./cofee shop.jpg" alt="">
+                                                <div class="portfolio-overlay">
+                                                    <a class="popup-ajax stretched-link" href="ajax/portfolio-ajax-project-dark-5.html"></a>
+                                                    <div class="portfolio-overlay-details">
+                                                        <h5 class="text-white fw-400">Project Title</h5>
+                                                        <span class="text-light">Category</span>
+                                                    </div>
                                                 </div>
-                                            </a>
-                                        </li>
-                                        <!-- Mix Content Box -->
-                                        <li class="mix webdesign col-xl-3 col-lg-4 col-md-6">
-                                            <a title="click to zoom-in" href="assets/images/protfolio/item-5.jpg" data-caption="Web Design" data-size="1200x600">
-                                                <img src="assets/images/protfolio/item-5.jpg" alt="Image description" />
-                                                <div class="info">
-                                                    <h3 class="title">Web Design</h3>
-                                                    <span class="post">project</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-sm-6 col-lg-4 portfolio-item graphic">
+                                        <div class="portfolio-box rounded">
+                                            <div class="portfolio-img rounded"> <img class="img-fluid d-block" src="./food-truck-pos.jpg" alt="">
+                                                <div class="portfolio-overlay">
+                                                    <a class="popup-ajax stretched-link" href="ajax/portfolio-ajax-project-dark-6.html"></a>
+                                                    <div class="portfolio-overlay-details">
+                                                        <h5 class="text-white fw-400">Project Title</h5>
+                                                        <span class="text-light">Category</span>
+                                                    </div>
                                                 </div>
-                                            </a>
-                                        </li>
-                                        <!-- Mix Content Box -->
-                                        <li class="mix graphic col-xl-3 col-lg-4 col-md-6">
-                                            <a title="click to zoom-in" href="assets/images/protfolio/item-6.jpg" data-caption="Graphic Design" data-size="1200x600">
-                                                <img src="assets/images/protfolio/item-6.jpg" alt="Image description" />
-                                                <div class="info">
-                                                    <h3 class="title">Graphic Design</h3>
-                                                    <span class="post">project</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-sm-6 col-lg-4 portfolio-item graphic">
+                                        <div class="portfolio-box rounded">
+                                            <div class="portfolio-img rounded"> <img class="img-fluid d-block" src="./backry.jpg" alt="">
+                                                <div class="portfolio-overlay">
+                                                    <a class="popup-ajax stretched-link" href="ajax/portfolio-ajax-project-dark-7.html"></a>
+                                                    <div class="portfolio-overlay-details">
+                                                        <h5 class="text-white fw-400">Project Title</h5>
+                                                        <span class="text-light">Category</span>
+                                                    </div>
                                                 </div>
-                                            </a>
-                                        </li>
-                                        <!-- Mix Content Box -->
-                                        <li class="mix uiuxdesign col-xl-3 col-lg-4 col-md-6">
-                                            <a title="click to zoom-in" href="assets/images/protfolio/item-7.jpg" data-caption="UI-UX Design" data-size="1200x600">
-                                                <img src="assets/images/protfolio/item-7.jpg" alt="Image description" />
-                                                <div class="info">
-                                                    <h3 class="title">UI-UX Design</h3>
-                                                    <span class="post">project</span>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <!-- Mix Content Box -->
-                                        <li class="mix graphic col-xl-3 col-lg-4 col-md-6">
-                                            <a title="click to zoom-in" href="assets/images/protfolio/item-8.jpg" data-caption="Graphic Design" data-size="1200x600">
-                                                <img src="assets/images/protfolio/item-8.jpg" alt="Image description" />
-                                                <div class="info">
-                                                    <h3 class="title">Graphic Design</h3>
-                                                    <span class="post">project</span>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <!-- Mix Content Box -->
-                                    </ul>
-                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
-                            <!-- Portfolio Mix Content End -->
                         </div>
                     </div>
                 </div>
@@ -1026,30 +999,36 @@
     <!-- Body Part End -->
 
     <!-- Optional JavaScript -->
-    <!-- Jquery Js -->
     <script src="assets/js/jquery.min.js"></script>
-    <!-- Bootstrap Js -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <!-- Jquery FancyBox Js -->
-    <script src="assets/js/jquery.fancybox.min.js"></script>
-    <!-- Mixitup Js -->
-    <script src="assets/js/mixitup.min.js"></script>
-    <!-- Owlcarousel Js -->
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <!-- Jquery Countdown Js -->
     <script src="assets/js/jquery.countdown.min.js"></script>
-    <!-- Wow Js -->
     <script src="assets/js/wow.min.js"></script>
-    <!-- colors JS -->
     <script src="assets/js/color.js"></script>
-    <!-- Style.switch JS -->
     <script src="assets/js/style.switch.js"></script>
-    <!-- Custom Js -->
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
     <script src="assets/js/custom.js"></script>
-    <!-- vegas background -->
     <script src="assets/js/vegas.min.js"></script>
-    <script src="assets/js/universal-tilt.js"></script>
     <script src="assets/js/jquery.plate.js"></script>
+
+
+
+
+
+
+    <script>
+        $(document).ready(function() {
+
+            $('.popup-ajax').magnificPopup({
+                type: 'ajax',
+                // overflowY: 'scroll'
+            });
+            $('.popup-ajax').magnificPopup({
+                type: 'ajax',
+            });
+
+        });
+    </script>
 
 
     <script>
@@ -1124,6 +1103,22 @@
             };
             xhr.send(data);
         }
+    </script>
+
+    <script>
+        var $grid = $('.portfolio').isotope({
+            // options
+            itemSelector: '.portfolio-item',
+        });
+
+        /* FILTERING */
+        $(".portfolio-menu button").click(function() {
+            var value = $(this).attr('data-name');
+            console.log(value);
+            $grid.isotope({
+                filter: value
+            });
+        });
     </script>
 
 </body>
